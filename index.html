@@ -1,1 +1,127 @@
-<p>Hola desde github c:</p>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Académico</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Iconos para redes sociales -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span class="nav-logo">&#9670;</span>
+        <span class="nav-name">Mi Portafolio</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#tareas">Tareas</a></li>
+        <li><a href="#ejercicios">Ejercicios</a></li>
+        <li><a href="#proyecto-final">Proyecto Final</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </nav>
+
+    <!-- ===== HERO / NOMBRE ===== -->
+    <header class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="hero-greeting">¡Hola, soy</p>
+        <h1 class="hero-name">Jesús Aarón De la Rosa</h1>
+        <p class="hero-subtitle">Estudiante · Desarrollador · Creador</p>
+        <a href="#descripcion" class="btn-primary">Conoce mi trabajo</a>
+      </div>
+      <div class="hero-decoration">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+    </header>
+
+    <!-- ===== DESCRIPCIÓN ===== -->
+    <section class="section" id="descripcion">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="descripcion-grid">
+          <div class="descripcion-text">
+            <p>
+              Soy estudiante de la <strong>Academia Xideral</strong>, apasionado por el
+              desarrollo de software y las tecnologías web. Este portafolio reúne mis
+              trabajos, tareas y proyectos realizados durante el curso.
+            </p>
+            <p>
+              Aquí encontrarás una colección de ejercicios, prácticas y mi proyecto
+              final, evidencia de mi aprendizaje y crecimiento como desarrollador.
+            </p>
+          </div>
+          <div class="descripcion-badges" id="tecnologias-badges">
+            <!-- Renderizado dinámicamente desde main.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TAREAS ===== -->
+    <section class="section section-alt" id="tareas">
+      <div class="container">
+        <h2 class="section-title">Tareas</h2>
+        <p class="section-subtitle">Colección de tareas realizadas durante el curso.</p>
+        <div class="cards-grid" id="tareas-grid">
+          <!-- Las tarjetas se generan dinámicamente desde main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EJERCICIOS EN CLASE ===== -->
+    <section class="section" id="ejercicios">
+      <div class="container">
+        <h2 class="section-title">Ejercicios en Clase</h2>
+        <p class="section-subtitle">Ejercicios y prácticas desarrolladas en clase.</p>
+        <div class="cards-grid" id="ejercicios-grid">
+          <!-- Las tarjetas se generan dinámicamente desde main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTO FINAL ===== -->
+    <section class="proyecto-final-section" id="proyecto-final">
+      <div class="proyecto-final-bg"></div>
+      <div class="container proyecto-final-content">
+        <span class="pf-label">&#9733; Proyecto Final &#9733;</span>
+        <h2 class="pf-title" id="pf-title">Nombre del Proyecto</h2>
+        <p class="pf-description" id="pf-description">
+          Descripción breve del proyecto final.
+        </p>
+        <div class="pf-tags" id="pf-tags"></div>
+        <a class="btn-final" id="pf-link" href="#" target="_blank">
+          Ver Proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a id="pf-image-link" href="#" target="_blank" rel="noopener noreferrer" class="pf-image-wrapper">
+          <img id="pf-image" src="" alt="Proyecto Final" class="pf-image" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Tu Nombre · Academia Xideral</p>
+      <div class="footer-social">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
