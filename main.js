@@ -24,22 +24,22 @@ const tecnologias = [
 // }
 const tareas = [
   {
-    title: "Tarea 1",
-    description: "Descripción breve de la primera tarea.",
+    title: "Primeros Pasos en Python",
+    description: "Introducción a Python: variables, tipos de datos y operaciones básicas.",
     image: "",
-    link: "#"
+    link: "Tareas/tarea1.html"
   },
   {
-    title: "Tarea 2",
-    description: "Descripción breve de la segunda tarea.",
+    title: "Primeros Pasos en Pandas",
+    description: "Introducción a Pandas: DataFrames y manipulación de datos.",
     image: "",
-    link: "#"
+    link: "Tareas/tarea_2.html"
   },
   {
-    title: "Tarea 3",
-    description: "Descripción breve de la tercera tarea.",
+    title: "Análisis de Datos del Titanic",
+    description: "Análisis del dataset Titanic: filtrado, estadísticas y manipulación con Pandas.",
     image: "",
-    link: "#"
+    link: "Tareas/tarea_3_Titanic_data.html"
   }
 ];
 
