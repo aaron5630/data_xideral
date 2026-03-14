@@ -40,6 +40,18 @@ const tareas = [
     description: "Análisis del dataset Titanic: filtrado, estadísticas y manipulación con Pandas.",
     image: "",
     link: "Tareas/tarea_3_Titanic_data.html"
+  },
+  {
+    title: "Tarea 4",
+    description: "Próximamente...",
+    image: "",
+    link: "#"
+  },
+  {
+    title: "Tarea 5",
+    description: "Aplicación web desplegada en AWS.",
+    image: "",
+    link: "http://52.53.250.103:8501/"
   }
 ];
 
@@ -47,16 +59,10 @@ const tareas = [
 // Misma estructura que tareas.
 const ejercicios = [
   {
-    title: "Ejercicio 1",
-    description: "Práctica realizada en clase sobre el tema X.",
+    title: "NumPy y Pandas en Spotify",
+    description: "Práctica en clase: análisis de datos de Spotify usando NumPy y Pandas.",
     image: "",
-    link: "#"
-  },
-  {
-    title: "Ejercicio 2",
-    description: "Práctica realizada en clase sobre el tema Y.",
-    image: "",
-    link: "#"
+    link: "Ejercicios_en_clase/Numpy y pandas en spotify.html"
   }
 ];
 
@@ -196,3 +202,4 @@ document.addEventListener('DOMContentLoaded', () => {
   actualizarAnio();
   iniciarNavActiva();
 });
+
