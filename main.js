@@ -42,16 +42,22 @@ const tareas = [
     link: "Tareas/tarea_3_Titanic_data.html"
   },
   {
-    title: "Tarea 4",
-    description: "Próximamente...",
+    title: "Tarea 4 - Code Combat",
+    description: "Recurso interactivo de enseñanza para aprender los fundamentos de Python mediante desafíos de programación.",
     image: "",
-    link: "#"
+    link: "Tareas/tarea_4.png"
   },
   {
     title: "Tarea 5",
     description: "Aplicación web desplegada en AWS.",
     image: "",
     link: "http://52.53.250.103:8501/"
+  },
+  {
+    title: "Tarea 6 - Procesamiento de Datos con AWS Lambda",
+    description: "Pipeline de limpieza y procesamiento de datos usando AWS Lambda, S3 y Pandas. Lectura, transformación y escritura de CSVs en la nube.",
+    image: "",
+    link: "Tareas/tarea_6.pdf"
   }
 ];
 
@@ -202,4 +208,3 @@ document.addEventListener('DOMContentLoaded', () => {
   actualizarAnio();
   iniciarNavActiva();
 });
-
