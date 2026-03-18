@@ -58,6 +58,12 @@ const tareas = [
     description: "Pipeline de limpieza y procesamiento de datos usando AWS Lambda, S3 y Pandas. Lectura, transformación y escritura de CSVs en la nube.",
     image: "",
     link: "Tareas/tarea_6.pdf"
+  },
+  {
+    title: "Tarea 7 - Certificado AWS",
+    description: "Certificación de AWS que valida conocimientos en servicios y arquitectura en la nube de Amazon Web Services.",
+    image: "",
+    link: "Tareas/ac578a8f-9f14-440f-ba30-f46b67868a27.pdf"
   }
 ];
 
@@ -69,6 +75,12 @@ const ejercicios = [
     description: "Práctica en clase: análisis de datos de Spotify usando NumPy y Pandas.",
     image: "",
     link: "Ejercicios_en_clase/Numpy y pandas en spotify.html"
+  },
+  {
+    title: "Netflix con PySpark",
+    description: "Práctica en clase: análisis y procesamiento de datos de Netflix utilizando PySpark.",
+    image: "",
+    link: "Ejercicios_en_clase/Netflix con PySpark.html"
   }
 ];
 
