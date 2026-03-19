@@ -81,6 +81,12 @@ const ejercicios = [
     description: "Práctica en clase: análisis y procesamiento de datos de Netflix utilizando PySpark.",
     image: "",
     link: "Ejercicios_en_clase/Netflix con PySpark.html"
+  },
+  {
+    title: "Bases de Datos",
+    description: "Práctica en clase: fundamentos y ejercicios de bases de datos.",
+    image: "",
+    link: "Ejercicios_en_clase/Bases de datos.html"
   }
 ];
 
@@ -220,4 +226,3 @@ document.addEventListener('DOMContentLoaded', () => {
   actualizarAnio();
   iniciarNavActiva();
 });
-
