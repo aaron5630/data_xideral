@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final — NYC Taxi Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="index.html" class="nav-brand-link">
+          <span class="nav-logo">&#9670;</span>
+          <span class="nav-name">Mi Portafolio</span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#descripcion">Descripción</a></li>
+        <li><a href="index.html#tareas">Tareas</a></li>
+        <li><a href="index.html#ejercicios">Ejercicios</a></li>
+        <li><a href="index.html#proyecto-final">Proyecto Final</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://github.com/aaron5630" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jesus-de-la-rosa-pinon/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </nav>
+
+    <!-- ===== CONTENIDO DEL PROYECTO FINAL ===== -->
+    <section class="proyecto-final-section proyecto-final-page" id="proyecto-final">
+      <div class="proyecto-final-bg"></div>
+      <div class="container proyecto-final-content">
+        <a href="index.html" class="pf-back-link">
+          <i class="fa-solid fa-arrow-left"></i> Volver al portafolio
+        </a>
+
+        <span class="pf-label">&#9733; Proyecto Final &#9733;</span>
+        <h1 class="pf-title" id="pf-title">NYC Taxi Analytics Dashboard</h1>
+        <p class="pf-description" id="pf-description">
+          Un sistema que toma millones de registros de viajes en taxi de Nueva York, los limpia y procesa automáticamente, y los convierte en un dashboard interactivo donde puedes explorar métricas como el total de viajes, ingresos, zonas más populares, horarios pico y mucho más.
+        </p>
+
+        <!-- Descripción extendida -->
+        <div class="pf-extended">
+          <p>
+            El proyecto trabaja con datos reales publicados por la ciudad de Nueva York. Cada mes se generan millones de registros de viajes en taxi amarillo que incluyen información como origen, destino, tarifa, propinas, distancia y duración.
+          </p>
+          <p>
+            Cuando se sube un nuevo archivo de datos, el sistema lo detecta automáticamente, lo limpia (elimina registros con errores o fechas incorrectas), calcula las métricas importantes y actualiza el dashboard sin intervención manual.
+          </p>
+          <p>
+            El dashboard permite explorar los datos por mes y año: ver cuántos viajes hubo, cuánto se recaudó en total, cuál fue la tarifa promedio, qué zonas de la ciudad tuvieron más actividad y en qué horarios hay más demanda de taxis.
+          </p>
+        </div>
+
+        <!-- Tecnologías -->
+        <div class="pf-tech-section">
+          <h3 class="pf-section-heading">Tecnologías utilizadas</h3>
+          <div class="pf-tech-grid">
+            <div class="pf-tech-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="pf-tech-card"><i class="fa-solid fa-bolt"></i><span>PySpark</span></div>
+            <div class="pf-tech-card"><i class="fa-solid fa-chart-line"></i><span>Streamlit</span></div>
+            <div class="pf-tech-card"><i class="fa-solid fa-table"></i><span>Pandas</span></div>
+            <div class="pf-tech-card"><i class="fa-solid fa-database"></i><span>Parquet</span></div>
+          </div>
+        </div>
+
+        <!-- Servicios AWS -->
+        <div class="pf-tech-section">
+          <h3 class="pf-section-heading">Servicios de AWS</h3>
+          <div class="pf-tech-grid">
+            <div class="pf-tech-card pf-aws-card"><i class="fa-solid fa-bucket"></i><span>Amazon S3</span><small>Almacenamiento de datos</small></div>
+            <div class="pf-tech-card pf-aws-card"><i class="fa-solid fa-server"></i><span>Amazon EC2</span><small>Procesamiento con PySpark</small></div>
+            <div class="pf-tech-card pf-aws-card"><i class="fa-solid fa-wand-magic-sparkles"></i><span>AWS Lambda</span><small>Automatización del pipeline</small></div>
+          </div>
+        </div>
+
+        <div class="pf-tags">
+          <span class="pf-tag">Pipeline ETL</span>
+          <span class="pf-tag">Dashboard Interactivo</span>
+          <span class="pf-tag">Big Data</span>
+          <span class="pf-tag">Cloud Computing</span>
+        </div>
+
+        <a class="btn-final" href="http://52.53.250.103:8502/" target="_blank">
+          Ver Dashboard en Vivo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+        <!-- Arquitectura -->
+        <div class="pf-architecture">
+          <h3 class="pf-section-heading">¿Cómo funciona?</h3>
+          <p class="pf-arch-desc">
+            Cuando se sube un nuevo archivo de datos a S3, una función Lambda lo detecta y genera una señal. El servidor EC2 recoge esa señal, ejecuta PySpark para limpiar y procesar los datos, y guarda los resultados listos para que el dashboard de Streamlit los muestre al instante.
+          </p>
+          <div class="pf-arch-image-wrapper">
+            <img src="Proyecto_final/Diagrama sin título.drawio.png" alt="Arquitectura del proyecto" class="pf-image" />
+          </div>
+        </div>
+
+        <!-- Galería de capturas -->
+        <div class="pf-gallery">
+          <h3 class="pf-section-heading">Así se ve la aplicación</h3>
+          <div class="pf-gallery-grid">
+            <div class="pf-screenshot">
+              <img src="Proyecto_final/Captura de pantalla 2026-03-19 215429.png" alt="Dashboard — KPIs y viajes por día" loading="lazy" />
+              <p>Dashboard — KPIs y viajes por día</p>
+            </div>
+            <div class="pf-screenshot">
+              <img src="Proyecto_final/Captura de pantalla 2026-03-19 215647.png" alt="Dashboard — Viajes por hora y tipo de pago" loading="lazy" />
+              <p>Dashboard — Viajes por hora y tipo de pago</p>
+            </div>
+            <div class="pf-screenshot">
+              <img src="Proyecto_final/Captura de pantalla 2026-03-19 215730.png" alt="Dashboard — Zonas populares y filtros" loading="lazy" />
+              <p>Dashboard — Zonas populares y filtros</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Jesús Aarón De la Rosa · Academia Xideral</p>
+      <div class="footer-social">
+        <a href="https://github.com/aaron5630" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jesus-de-la-rosa-pinon/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
