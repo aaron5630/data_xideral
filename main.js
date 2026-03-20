@@ -64,6 +64,18 @@ const tareas = [
     description: "Certificación de AWS que valida conocimientos en servicios y arquitectura en la nube de Amazon Web Services.",
     image: "",
     link: "Tareas/ac578a8f-9f14-440f-ba30-f46b67868a27.pdf"
+  },
+  {
+    title: "Tarea 8 - Getting into the Serverless Mindset",
+    description: "Certificado del curso Getting into the Serverless Mindset (Español LATAM) sobre arquitectura serverless en AWS.",
+    image: "",
+    link: "Tareas/83652566-172a-483a-b122-b5aebdf347dd.pdf"
+  },
+  {
+    title: "Tarea 9 - Data Engineering on AWS Foundations",
+    description: "Certificado del curso Data Engineering on AWS Foundations sobre los fundamentos de ingeniería de datos en la nube de AWS.",
+    image: "",
+    link: "Tareas/9d03082c-2864-4592-badb-98a05624ceac.pdf"
   }
 ];
 
@@ -91,14 +103,14 @@ const ejercicios = [
 ];
 
 // ─── DATOS DEL PROYECTO FINAL ────────────────────────────────────────────────
-// Modifica los valores para personalizar la sección del proyecto final.
 const proyectoFinal = {
-  title: "Nombre del Proyecto Final",
+  title: "NYC Taxi Analytics Dashboard",
   description:
-    "Aquí va la descripción de tu proyecto final. Explica qué problema resuelve, qué tecnologías usaste y qué aprendiste.",
-  image: "",          // URL o ruta a una captura del proyecto (dejar '' para ocultarla)
-  link: "#",          // URL del proyecto o repositorio
-  tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"]
+    "Un sistema que toma millones de registros de viajes en taxi de Nueva York, los limpia y procesa automáticamente en la nube, y los convierte en un dashboard interactivo con métricas de viajes, ingresos, zonas populares y más.",
+  image: "Proyecto_final/Captura de pantalla 2026-03-19 215429.png",
+  link: "http://52.53.250.103:8502/",
+  detailsLink: "proyecto-final.html",
+  tags: ["Pipeline ETL", "Dashboard Interactivo", "Big Data", "Cloud Computing"]
 };
 
 // ─── RENDERIZADO DE TECNOLOGÍAS ──────────────────────────────────────────────
@@ -168,20 +180,26 @@ function renderizarProyectoFinal() {
   document.getElementById('pf-description').textContent = pf.description;
   document.getElementById('pf-link').href               = pf.link;
 
+  // Link a la página de detalles
+  const detailsLink = document.getElementById('pf-details-link');
+  if (detailsLink && pf.detailsLink) {
+    detailsLink.href = pf.detailsLink;
+  }
+
   // Tags
   const tagsContainer = document.getElementById('pf-tags');
   tagsContainer.innerHTML = pf.tags
     .map(tag => `<span class="pf-tag">${tag}</span>`)
     .join('');
 
-  // Imagen del proyecto final (funciona como hipervínculo)
-  const pfImage    = document.getElementById('pf-image');
-  const pfImgLink  = document.getElementById('pf-image-link');
+  // Imagen preview del proyecto final
+  const pfImage   = document.getElementById('pf-image');
+  const pfImgLink = document.getElementById('pf-image-link');
 
   if (pf.image) {
-    pfImage.src       = pf.image;
-    pfImage.alt       = pf.title;
-    pfImgLink.href    = pf.link;
+    pfImage.src    = pf.image;
+    pfImage.alt    = pf.title;
+    pfImgLink.href = pf.detailsLink || pf.link;
   } else {
     pfImgLink.style.display = 'none';
   }
@@ -226,4 +244,3 @@ document.addEventListener('DOMContentLoaded', () => {
   actualizarAnio();
   iniciarNavActiva();
 });
-
